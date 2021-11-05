@@ -266,7 +266,7 @@ variable "worker_create_initial_lifecycle_hooks" {
 variable "worker_create_cluster_primary_security_group_rules" {
   description = "Whether to create security group rules to allow communication between pods on workers and pods using the primary cluster security group."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "permissions_boundary" {
